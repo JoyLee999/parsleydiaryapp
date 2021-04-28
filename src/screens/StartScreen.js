@@ -10,7 +10,11 @@ export default function StartScreen({ navigation }) {
     <Background>
       <Logo />
       <Header>Parsley Diary Login</Header>
-      <Paragraph>If you want back up parsley diary,<br/>it need to log in</Paragraph>
+      <Paragraph>
+        If you want back up parsley diary,
+        <br />
+        it need to log in
+      </Paragraph>
       <Button
         mode="contained"
         onPress={() => navigation.navigate('LoginScreen')}
