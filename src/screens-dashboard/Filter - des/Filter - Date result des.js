@@ -1,11 +1,11 @@
-import React from 'react';
-import { StyleSheet, Text, View, StatusBar, Image } from 'react-native';
-import picc from './asset/button/nav-left.png';
-import pic from './asset/button/arr-on.png';
-import piccc from './asset/icon/icon-date.png';
+import React from 'react'
+import { StyleSheet, Text, View, StatusBar, Image } from 'react-native'
+import picc from '../../assets/button/nav-left.png'
+import pic from '../../assets/button/arr-on.png'
+import piccc from '../../assets/icon/icon-date.png'
 
 const Header = () => (
-    <View style={styles.HeaderContainer}>
+  <View style={styles.HeaderContainer}>
     <Text style={styles.HeaderText}>Date</Text>
     <Text style={styles.Filtertext}> Back </Text>
     <Text style={styles.ti1text}>Title1</Text>
@@ -15,13 +15,10 @@ const Header = () => (
     <Text style={styles.ti3text}>Title3</Text>
     <Text style={styles.t3text}>15 apr 2021</Text>
     <Text style={styles.restext}>13 APR 2021 - 15 APR 2021</Text>
-    <Image source={picc}
-             style={styles.Backlogo}/>
-    <Image source={pic}
-    style={styles.Arraylogo}/>
-    <Image source={piccc}
-    style={styles.Searchlogo}/>
-    </View>
+    <Image source={picc} style={styles.Backlogo} />
+    <Image source={pic} style={styles.Arraylogo} />
+    <Image source={piccc} style={styles.Searchlogo} />
+  </View>
 )
 
 const styles = StyleSheet.create({
@@ -30,97 +27,95 @@ const styles = StyleSheet.create({
     height: 32,
     position: 'absolute',
     marginLeft: 12,
-    marginTop: 52
-  } ,
-  
+    marginTop: 52,
+  },
+
   Filtertext: {
-    color: "#3f3e3e",
+    color: '#3f3e3e',
     fontSize: 28,
     position: 'absolute',
     marginLeft: 52,
-    marginTop: 49
-  } ,
-  
+    marginTop: 49,
+  },
+
   restext: {
     position: 'absolute',
     fontSize: 24,
-    color: "#3f3e3e",
-    marginTop:144,
-    marginLeft:26,
-    fontWeight: "bold"
-  }, 
+    color: '#3f3e3e',
+    marginTop: 144,
+    marginLeft: 26,
+    fontWeight: 'bold',
+  },
   Arraylogo: {
     width: 28,
     height: 28,
     position: 'absolute',
     marginLeft: 354,
-    marginTop: 55
-  } , 
+    marginTop: 55,
+  },
   Searchlogo: {
     width: 32,
     height: 32,
     position: 'absolute',
     marginLeft: 162,
-    marginTop: 49
-  } , 
+    marginTop: 49,
+  },
   HeaderContainer: {
-        backgroundColor: '#ffffff',
-        width: '100%',
-        height: '15%',
-        paddingTop: 15
-    },
-    HeaderText: {
-        fontSize: 24,
-        color: '#3f3e3e',
-        position: 'absolute',
-        marginTop: 49,
-        marginLeft: 205
-    },
+    backgroundColor: '#ffffff',
+    width: '100%',
+    height: '15%',
+    paddingTop: 15,
+  },
+  HeaderText: {
+    fontSize: 24,
+    color: '#3f3e3e',
+    position: 'absolute',
+    marginTop: 49,
+    marginLeft: 205,
+  },
 
-    ti1text: {
-      position:'absolute',
-      fontSize: 20,
-      marginTop: 294,
-      marginLeft:58,
-      color: "#3f3e3e",
-    },
-    t1text: {
-      position:'absolute',
-      fontSize: 17,
-      marginTop: 298,
-      marginLeft:287,
-      color: "#3f3e3e"
-    },
-    ti2text: {
-      position:'absolute',
-      fontSize: 20,
-      marginTop: 249,
-      marginLeft:58,
-      color: "#3f3e3e"
+  ti1text: {
+    position: 'absolute',
+    fontSize: 20,
+    marginTop: 294,
+    marginLeft: 58,
+    color: '#3f3e3e',
+  },
+  t1text: {
+    position: 'absolute',
+    fontSize: 17,
+    marginTop: 298,
+    marginLeft: 287,
+    color: '#3f3e3e',
+  },
+  ti2text: {
+    position: 'absolute',
+    fontSize: 20,
+    marginTop: 249,
+    marginLeft: 58,
+    color: '#3f3e3e',
+  },
+  t2text: {
+    position: 'absolute',
+    fontSize: 17,
+    marginTop: 253,
+    marginLeft: 287,
+    color: '#3f3e3e',
+  },
+  ti3text: {
+    position: 'absolute',
+    fontSize: 20,
+    marginTop: 204,
+    marginLeft: 58,
+    color: '#3f3e3e',
+  },
+  t3text: {
+    position: 'absolute',
+    fontSize: 17,
+    marginTop: 208,
+    marginLeft: 287,
+    color: '#3f3e3e',
+  },
+})
 
-    },
-    t2text: {
-      position:'absolute',
-      fontSize: 17,
-      marginTop: 253,
-      marginLeft:287,
-      color: "#3f3e3e"
-    },
-    ti3text: {
-      position:'absolute',
-      fontSize: 20,
-      marginTop: 204,
-      marginLeft:58,
-      color: "#3f3e3e"
-    },
-    t3text: {
-      position:'absolute',
-      fontSize: 17,
-      marginTop: 208,
-      marginLeft:287,
-      color: "#3f3e3e"
-    }
-        
-});
-
-export default Header;
+export default Header

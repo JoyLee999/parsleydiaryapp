@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import {  View, Image, StyleSheet } from 'react-native';
+import React, { Component } from 'react'
+import { View, Image, StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
-  
   container: {
     paddingTop: 50,
     margin: 110,
   },
- 
+
   logo: {
     width: 212,
     height: 212,
@@ -16,7 +15,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
   },
-});
+})
 
 class DisplayAnImage extends Component {
   render() {
@@ -24,17 +23,15 @@ class DisplayAnImage extends Component {
       <View style={styles.container}>
         <Image
           style={styles.logo}
-          source={require("./asset/icon/logo.png")}
-
+          source={require('../assets/icon/logo.png')}
         />
         <Image
           style={styles.tinyLogo}
-          source={require("./asset/icon/parsely.png")}
-
+          source={require('../assets/icon/parsely.png')}
         />
       </View>
-    );
+    )
   }
 }
 
-export default DisplayAnImage;
+export default DisplayAnImage
